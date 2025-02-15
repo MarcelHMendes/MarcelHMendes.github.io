@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcel Mendes - Resume</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #49a5e7;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #002F6C;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #90c8f5;
+        }
+        .profile-img {
+            display: block;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            border: 4px solid #0288D1;
+        }
+        ul {
+            list-style: None;
+            padding: 7px;
+        }
+        ul li {
+            background: #ecf3f8;
+            padding: 5px;
+            margin: 3px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .assignment-list li {
+            background: none;
+            padding-left: 0px;
+            box-shadow: none;
+        }
+        .contact-info {
+            /*position: fixed;*/
+            top: 20px;
+            right: 20px;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+        }
+        .contact-info a {
+            display: inline-block;
+            color: #01579B;
+            text-decoration: none;
+            margin: 5px;
+        }
+        .contact-info img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="section" id="profile">
+            <img src="profile-photo.jpg" alt="Profile Picture" class="profile-img">
+            <h1>Marcel Mendes</h1>
+            <p>
+                Bachelor's in Computer Science, Master's student at UFMG focusing on Internet topology mapping and BGP security. Network security and distributed systems enthusiast.
+            </p>
+        </section>
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Master's Degree in Computer Science</strong> - Universidade Federal de Minas Gerais (Candidate)</li>
+                <li><strong>Bachelor's Degree in Computer Science</strong> - Universidade Federal de Minas Gerais (2020)</li>
+                <li><strong>IT Technician Certification</strong> - Senai/MG (2011)</li>
+            </ul>
+        </section>
+
+        <section class="section" id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Technology Analyst</strong> - Serpro (2024 - Present)
+                </li>
+                <li>
+                    <strong>Graduate Student Researcher</strong> - DCC UFMG (2021 - Present)
+                    <ul class="assignment-list">
+                        <li>Developed Internet topology mapping tools</li>
+                        <li>Studied BGP behavior and security</li>
+                        <li>Published research in academic conferences</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Undergraduate Student Researcher</strong> - DCC UFMG (2019 - 2021)
+                    <ul class="assignment-list">
+                        <li>Developed tools for TCP protocol performance studies</li>
+                        <li>Extended route visualization tools</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Intern</strong> - CECOM UFMG (2017 - 2018)
+                    <ul class="assignment-list">
+                        <li>Provided network and IT system support</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Intern</strong> - Superintendência Regional da Polícia Federal do Estado de MG (2017 - 2017)
+                    <ul class="assignment-list">
+                        <li>Developed and maintained web portals</li>
+                        <li>Provided Level 1 and 2 IT support</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="courses">
+            <h2>Courses & Certifications</h2>
+            <ul>
+                <li><strong>Course Name</strong> - Institution (Year)</li>
+                <li><strong>Another Course</strong> - Institution (Year)</li>
+            </ul>
+        </section>
+
+        <div class="contact-info">
+            <h2>Contact</h2>
+            <a href="mailto:mhsmendes@protonmail.com"><img src="email.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/marcel-mendes-143516199/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/MarcelHMendes" target="_blank"><img src="github.png" alt="GitHub"></a>
+            <!--<a href="https://x.com/SERPRO?mx=2" target="_blank"><img src="serpro.png" alt="Serpro"></a>-->
+        </div>
+    </div>
+</body>
+</html>
