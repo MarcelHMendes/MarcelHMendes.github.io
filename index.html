@@ -4,71 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcel Mendes - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #49a5e7;
+            background-color: #f4f4f9;
             color: #333;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             background: #fff;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-        h1, h2 {
-            color: #002F6C;
+        .header {
             text-align: center;
         }
-        .section {
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #90c8f5;
-        }
         .profile-img {
-            display: block;
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
-            margin: 0 auto 15px;
-            border: 4px solid #0288D1;
+            margin-bottom: 15px;
+            border: 5px solid #0077b6;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #023e8a;
+        }
+        h2 {
+            font-size: 22px;
+            color: #0077b6;
+            border-bottom: 2px solid #0077b6;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
         }
         ul {
-            list-style: None;
-            padding: 7px;
+            list-style-type: none;
+            padding: 0;
         }
         ul li {
-            background: #ecf3f8;
-            padding: 5px;
-            margin: 3px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: #e3f2fd;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .assignment-list li {
             background: none;
-            padding-left: 0px;
-            box-shadow: none;
+            padding-left: 15px;
+            font-size: 14px;
+            color: #555;
         }
         .contact-info {
-            /*position: fixed;*/
-            top: 20px;
-            right: 20px;
-            background: #f9f9f9;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
         }
         .contact-info a {
-            display: inline-block;
-            color: #01579B;
             text-decoration: none;
-            margin: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #0077b6;
+            font-weight: 600;
         }
         .contact-info img {
             width: 24px;
@@ -78,30 +84,26 @@
 </head>
 <body>
     <div class="container">
-        <section class="section" id="profile">
+        <div class="header">
             <img src="profile-photo.jpg" alt="Profile Picture" class="profile-img">
             <h1>Marcel Mendes</h1>
-            <p>
-                Bachelor's in Computer Science, Master's student at UFMG focusing on Internet topology mapping and BGP security. Network security and distributed systems enthusiast.
-            </p>
-        </section>
+            <p>Bachelor's in Computer Science, Master's student at UFMG focusing on Internet topology mapping and BGP security. Network security and distributed systems enthusiast.</p>
+        </div>
+
         <section class="section" id="education">
             <h2>Education</h2>
             <ul>
-                <li><strong>Master's Degree in Computer Science</strong> - Universidade Federal de Minas Gerais (Candidate)</li>
-                <li><strong>Bachelor's Degree in Computer Science</strong> - Universidade Federal de Minas Gerais (2020)</li>
-                <li><strong>IT Technician Certification</strong> - Senai/MG (2011)</li>
+                <li>Master's in Computer Science - UFMG (Candidate)</li>
+                <li>Bachelor's in Computer Science - UFMG (2020)</li>
+                <li>IT Technician Certification - Senai/MG (2011)</li>
             </ul>
         </section>
 
         <section class="section" id="experience">
             <h2>Experience</h2>
             <ul>
-                <li>
-                    <strong>Technology Analyst</strong> - Serpro (2024 - Present)
-                </li>
-                <li>
-                    <strong>Graduate Student Researcher</strong> - DCC UFMG (2021 - Present)
+                <li><strong>Technology Analyst</strong> - Serpro (2024 - Present)</li>
+                <li><strong>Graduate Researcher</strong> - DCC UFMG (2021 - Present)
                     <ul class="assignment-list">
                         <li>Developed Internet topology mapping tools</li>
                         <li>Studied BGP behavior and security</li>
@@ -134,17 +136,14 @@
         <section class="section" id="courses">
             <h2>Courses & Certifications</h2>
             <ul>
-                <li><strong>Course Name</strong> - Institution (Year)</li>
-                <li><strong>Another Course</strong> - Institution (Year)</li>
+                <li>Course Name - Institution (Year)</li>
             </ul>
         </section>
 
         <div class="contact-info">
-            <h2>Contact</h2>
-            <a href="mailto:mhsmendes@protonmail.com"><img src="email.png" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/marcel-mendes-143516199/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/MarcelHMendes" target="_blank"><img src="github.png" alt="GitHub"></a>
-            <!--<a href="https://x.com/SERPRO?mx=2" target="_blank"><img src="serpro.png" alt="Serpro"></a>-->
+            <a href="mailto:mhsmendes@protonmail.com"><img src="email.png" alt="Email"> Email</a>
+            <a href="https://www.linkedin.com/in/marcel-mendes-143516199/" target="_blank"><img src="linkedin.png" alt="LinkedIn"> LinkedIn</a>
+            <a href="https://github.com/MarcelHMendes" target="_blank"><img src="github.png" alt="GitHub"> GitHub</a>
         </div>
     </div>
 </body>
